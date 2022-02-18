@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "start": "ng serve angularfire-compat-app"
+    "start": "ng serve angularfire-compat-app",
+    "test": "jest --no-cache"     
   }
 }

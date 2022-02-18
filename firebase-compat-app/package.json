@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "start": "ng serve firebase-compat-app"
+    "start": "ng serve firebase-compat-app",
+    "test": "jest --no-cache"     
   }
 }
