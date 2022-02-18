@@ -26,9 +26,7 @@
               "angularfire-compat-app/src/favicon.ico",
               "angularfire-compat-app/src/assets"
             ],
-            "styles": [
-              "angularfire-compat-app/src/styles.css"
-            ],
+            "styles": ["angularfire-compat-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -93,9 +91,7 @@
               "angularfire-compat-app/src/favicon.ico",
               "angularfire-compat-app/src/assets"
             ],
-            "styles": [
-              "angularfire-compat-app/src/styles.css"
-            ],
+            "styles": ["angularfire-compat-app/src/styles.css"],
             "scripts": []
           }
         }
@@ -124,9 +120,7 @@
               "angularfire-app/src/favicon.ico",
               "angularfire-app/src/assets"
             ],
-            "styles": [
-              "angularfire-app/src/styles.css"
-            ],
+            "styles": ["angularfire-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -191,9 +185,7 @@
               "angularfire-app/src/favicon.ico",
               "angularfire-app/src/assets"
             ],
-            "styles": [
-              "angularfire-app/src/styles.css"
-            ],
+            "styles": ["angularfire-app/src/styles.css"],
             "scripts": []
           }
         }
@@ -222,9 +214,7 @@
               "firebase-compat-app/src/favicon.ico",
               "firebase-compat-app/src/assets"
             ],
-            "styles": [
-              "firebase-compat-app/src/styles.css"
-            ],
+            "styles": ["firebase-compat-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -289,9 +279,7 @@
               "firebase-compat-app/src/favicon.ico",
               "firebase-compat-app/src/assets"
             ],
-            "styles": [
-              "firebase-compat-app/src/styles.css"
-            ],
+            "styles": ["firebase-compat-app/src/styles.css"],
             "scripts": []
           }
         }
@@ -320,9 +308,7 @@
               "firebase-app/src/favicon.ico",
               "firebase-app/src/assets"
             ],
-            "styles": [
-              "firebase-app/src/styles.css"
-            ],
+            "styles": ["firebase-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -387,9 +373,7 @@
               "firebase-app/src/favicon.ico",
               "firebase-app/src/assets"
             ],
-            "styles": [
-              "firebase-app/src/styles.css"
-            ],
+            "styles": ["firebase-app/src/styles.css"],
             "scripts": []
           }
         }
