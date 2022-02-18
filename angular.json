@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  },
   "version": 1,
   "newProjectRoot": ".",
   "projects": {
@@ -26,7 +29,9 @@
               "angularfire-compat-app/src/favicon.ico",
               "angularfire-compat-app/src/assets"
             ],
-            "styles": ["angularfire-compat-app/src/styles.css"],
+            "styles": [
+              "angularfire-compat-app/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -91,8 +96,19 @@
               "angularfire-compat-app/src/favicon.ico",
               "angularfire-compat-app/src/assets"
             ],
-            "styles": ["angularfire-compat-app/src/styles.css"],
+            "styles": [
+              "angularfire-compat-app/src/styles.css"
+            ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "angularfire-compat-app/**/*.ts",
+              "angularfire-compat-app/**/*.html"
+            ]
           }
         }
       }
@@ -120,7 +136,9 @@
               "angularfire-app/src/favicon.ico",
               "angularfire-app/src/assets"
             ],
-            "styles": ["angularfire-app/src/styles.css"],
+            "styles": [
+              "angularfire-app/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -185,8 +203,19 @@
               "angularfire-app/src/favicon.ico",
               "angularfire-app/src/assets"
             ],
-            "styles": ["angularfire-app/src/styles.css"],
+            "styles": [
+              "angularfire-app/src/styles.css"
+            ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "angularfire-app/**/*.ts",
+              "angularfire-app/**/*.html"
+            ]
           }
         }
       }
@@ -214,7 +243,9 @@
               "firebase-compat-app/src/favicon.ico",
               "firebase-compat-app/src/assets"
             ],
-            "styles": ["firebase-compat-app/src/styles.css"],
+            "styles": [
+              "firebase-compat-app/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -279,8 +310,19 @@
               "firebase-compat-app/src/favicon.ico",
               "firebase-compat-app/src/assets"
             ],
-            "styles": ["firebase-compat-app/src/styles.css"],
+            "styles": [
+              "firebase-compat-app/src/styles.css"
+            ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "firebase-compat-app/**/*.ts",
+              "firebase-compat-app/**/*.html"
+            ]
           }
         }
       }
@@ -308,7 +350,9 @@
               "firebase-app/src/favicon.ico",
               "firebase-app/src/assets"
             ],
-            "styles": ["firebase-app/src/styles.css"],
+            "styles": [
+              "firebase-app/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -373,8 +417,19 @@
               "firebase-app/src/favicon.ico",
               "firebase-app/src/assets"
             ],
-            "styles": ["firebase-app/src/styles.css"],
+            "styles": [
+              "firebase-app/src/styles.css"
+            ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "firebase-app/**/*.ts",
+              "firebase-app/**/*.html"
+            ]
           }
         }
       }

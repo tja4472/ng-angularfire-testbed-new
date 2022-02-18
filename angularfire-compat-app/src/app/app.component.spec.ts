@@ -25,6 +25,7 @@ describe('AppComponent', () => {
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
+    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain(
       'angularfire-compat-app app is running!'

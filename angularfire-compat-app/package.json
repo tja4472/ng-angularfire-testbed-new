@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "ng serve angularfire-compat-app",
-    "test": "jest --no-cache"     
+    "test": "jest --no-cache",
+    "lint": "ng lint angularfire-compat-app"   
   }
 }

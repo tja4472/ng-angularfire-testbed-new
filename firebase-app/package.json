@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "ng serve firebase-app",
-    "test": "jest --no-cache"     
+    "test": "jest --no-cache",
+    "lint": "ng lint firebase-app"        
   }
 }
