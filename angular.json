@@ -3,5 +3,398 @@
   "version": 1,
   "newProjectRoot": ".",
   "projects": {
-  }
+    "angularfire-compat-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "angularfire-compat-app",
+      "sourceRoot": "angularfire-compat-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angularfire-compat-app",
+            "index": "angularfire-compat-app/src/index.html",
+            "main": "angularfire-compat-app/src/main.ts",
+            "polyfills": "angularfire-compat-app/src/polyfills.ts",
+            "tsConfig": "angularfire-compat-app/tsconfig.app.json",
+            "assets": [
+              "angularfire-compat-app/src/favicon.ico",
+              "angularfire-compat-app/src/assets"
+            ],
+            "styles": [
+              "angularfire-compat-app/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "angularfire-compat-app/src/environments/environment.ts",
+                  "with": "angularfire-compat-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "angularfire-compat-app:build:production"
+            },
+            "development": {
+              "browserTarget": "angularfire-compat-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angularfire-compat-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "angularfire-compat-app/src/test.ts",
+            "polyfills": "angularfire-compat-app/src/polyfills.ts",
+            "tsConfig": "angularfire-compat-app/tsconfig.spec.json",
+            "karmaConfig": "angularfire-compat-app/karma.conf.js",
+            "assets": [
+              "angularfire-compat-app/src/favicon.ico",
+              "angularfire-compat-app/src/assets"
+            ],
+            "styles": [
+              "angularfire-compat-app/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "angularfire-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "angularfire-app",
+      "sourceRoot": "angularfire-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angularfire-app",
+            "index": "angularfire-app/src/index.html",
+            "main": "angularfire-app/src/main.ts",
+            "polyfills": "angularfire-app/src/polyfills.ts",
+            "tsConfig": "angularfire-app/tsconfig.app.json",
+            "assets": [
+              "angularfire-app/src/favicon.ico",
+              "angularfire-app/src/assets"
+            ],
+            "styles": [
+              "angularfire-app/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "angularfire-app/src/environments/environment.ts",
+                  "with": "angularfire-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "angularfire-app:build:production"
+            },
+            "development": {
+              "browserTarget": "angularfire-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angularfire-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "angularfire-app/src/test.ts",
+            "polyfills": "angularfire-app/src/polyfills.ts",
+            "tsConfig": "angularfire-app/tsconfig.spec.json",
+            "karmaConfig": "angularfire-app/karma.conf.js",
+            "assets": [
+              "angularfire-app/src/favicon.ico",
+              "angularfire-app/src/assets"
+            ],
+            "styles": [
+              "angularfire-app/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "firebase-compat-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "firebase-compat-app",
+      "sourceRoot": "firebase-compat-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/firebase-compat-app",
+            "index": "firebase-compat-app/src/index.html",
+            "main": "firebase-compat-app/src/main.ts",
+            "polyfills": "firebase-compat-app/src/polyfills.ts",
+            "tsConfig": "firebase-compat-app/tsconfig.app.json",
+            "assets": [
+              "firebase-compat-app/src/favicon.ico",
+              "firebase-compat-app/src/assets"
+            ],
+            "styles": [
+              "firebase-compat-app/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "firebase-compat-app/src/environments/environment.ts",
+                  "with": "firebase-compat-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "firebase-compat-app:build:production"
+            },
+            "development": {
+              "browserTarget": "firebase-compat-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "firebase-compat-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "firebase-compat-app/src/test.ts",
+            "polyfills": "firebase-compat-app/src/polyfills.ts",
+            "tsConfig": "firebase-compat-app/tsconfig.spec.json",
+            "karmaConfig": "firebase-compat-app/karma.conf.js",
+            "assets": [
+              "firebase-compat-app/src/favicon.ico",
+              "firebase-compat-app/src/assets"
+            ],
+            "styles": [
+              "firebase-compat-app/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "firebase-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "firebase-app",
+      "sourceRoot": "firebase-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/firebase-app",
+            "index": "firebase-app/src/index.html",
+            "main": "firebase-app/src/main.ts",
+            "polyfills": "firebase-app/src/polyfills.ts",
+            "tsConfig": "firebase-app/tsconfig.app.json",
+            "assets": [
+              "firebase-app/src/favicon.ico",
+              "firebase-app/src/assets"
+            ],
+            "styles": [
+              "firebase-app/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "firebase-app/src/environments/environment.ts",
+                  "with": "firebase-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "firebase-app:build:production"
+            },
+            "development": {
+              "browserTarget": "firebase-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "firebase-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "firebase-app/src/test.ts",
+            "polyfills": "firebase-app/src/polyfills.ts",
+            "tsConfig": "firebase-app/tsconfig.spec.json",
+            "karmaConfig": "firebase-app/karma.conf.js",
+            "assets": [
+              "firebase-app/src/favicon.ico",
+              "firebase-app/src/assets"
+            ],
+            "styles": [
+              "firebase-app/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angularfire-compat-app"
 }
