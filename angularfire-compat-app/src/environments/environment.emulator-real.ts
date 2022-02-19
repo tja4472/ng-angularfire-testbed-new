@@ -2,15 +2,15 @@ import { firebaseConfigDev } from '../app/firebase/firebase-config-dev';
 
 import { Environment } from './environment-types';
 
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment: Environment = {
   appCode: 'ngrx-auth-module',
   production: false,
   firebase: {
     config: firebaseConfigDev,
+    emulators: {
+      auth: ['http://localhost:9099'],
+      firestore: ['localhost', 8080],
+    },
   },
 };
 
@@ -21,4 +21,4 @@ export const environment: Environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+import 'zone.js/plugins/zone-error'; // Included with Angular CLI.
