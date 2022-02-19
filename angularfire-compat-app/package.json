@@ -1,8 +1,15 @@
 {
   "scripts": {
     "start": "ng serve angularfire-compat-app",
+    "start:emulator-demo": "ng serve angularfire-compat-app --configuration=emulator-demo",
+    "start:emulator-real": "ng serve angularfire-compat-app --configuration=emulator-real",
+    "start:production": "ng serve angularfire-compat-app --configuration=production",    
     "test": "jest --no-cache",
     "lint": "ng lint angularfire-compat-app",
-    "cypress:open": "ng run angularfire-compat-app:cypress-open"      
+    "--- cypress ---": "",    
+    "cypress:emulate-demo": "cross-env FIRESTORE_EMULATOR_HOST=\"localhost:8080\" FIREBASE_AUTH_EMULATOR_HOST=\"localhost:9099\" CYPRESS_USE_DEMO_PROJECT=\"true\" GCLOUD_PROJECT=\"demo-1\" npm run cypress:open",
+    "cypress:emulate-real": "cross-env FIRESTORE_EMULATOR_HOST=\"localhost:8080\" FIREBASE_AUTH_EMULATOR_HOST=\"localhost:9099\" GCLOUD_PROJECT=\"emulators-codelab-a5a89\" npm run cypress:open",
+    "cypress:open": "ng run angularfire-compat-app:cypress-open" ,
+    "cypress:open-real": "cross-env GOOGLE_APPLICATION_CREDENTIALS=\"serviceAccount-real.json\" npm run cypress:open"
   }
 }

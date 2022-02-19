@@ -15,3 +15,19 @@
 
 // When a command from ./commands is ready to use, import with `import './commands'` syntax
 // import './commands';
+import './commands';
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      getBySel(
+        dataTestAttribute: string,
+        args?: any
+      ): Chainable<JQuery<HTMLElement>>;
+      getBySelLike(
+        dataTestPrefixAttribute: string,
+        args?: any
+      ): Chainable<JQuery<HTMLElement>>;
+    }
+  }
+}

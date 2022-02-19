@@ -3,6 +3,7 @@
   "include": ["**/*.ts"],
   "compilerOptions": {
     "sourceMap": false,
-    "types": ["cypress"]
+    // Explicit about types included to avoid clashing with Jest global types
+    "types": ["cypress", "node", "cypress-firebase"]
   }
 }

@@ -61,6 +61,22 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "emulator-demo": {
+              "fileReplacements": [
+                {
+                  "replace": "angularfire-compat-app/src/environments/environment.ts",
+                  "with": "angularfire-compat-app/src/environments/environment.emulator-demo.ts"
+                }
+              ]
+            },
+            "emulator-real": {
+              "fileReplacements": [
+                {
+                  "replace": "angularfire-compat-app/src/environments/environment.ts",
+                  "with": "angularfire-compat-app/src/environments/environment.emulator-real.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -73,6 +89,12 @@
             },
             "development": {
               "browserTarget": "angularfire-compat-app:build:development"
+            },
+            "emulator-demo": {
+              "browserTarget": "angularfire-compat-app:build:emulator-demo"
+            },
+            "emulator-real": {
+              "browserTarget": "angularfire-compat-app:build:emulator-real"
             }
           },
           "defaultConfiguration": "development"
