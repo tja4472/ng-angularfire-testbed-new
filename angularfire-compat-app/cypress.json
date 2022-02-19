@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "angularfire-compat-app/cypress/integration",
+  "supportFile": "angularfire-compat-app/cypress/support/index.ts",
+  "videosFolder": "angularfire-compat-app/cypress/videos",
+  "screenshotsFolder": "angularfire-compat-app/cypress/screenshots",
+  "pluginsFile": "angularfire-compat-app/cypress/plugins/index.ts",
+  "fixturesFolder": "angularfire-compat-app/cypress/fixtures",
+  "baseUrl": "http://localhost:4200"
+}

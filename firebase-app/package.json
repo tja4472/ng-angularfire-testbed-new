@@ -2,6 +2,7 @@
   "scripts": {
     "start": "ng serve firebase-app",
     "test": "jest --no-cache",
-    "lint": "ng lint firebase-app"        
+    "lint": "ng lint firebase-app",
+    "cypress:open": "ng run firebase-app:cypress-open"           
   }
 }

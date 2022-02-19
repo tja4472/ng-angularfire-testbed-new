@@ -2,6 +2,7 @@
   "scripts": {
     "start": "ng serve firebase-compat-app",
     "test": "jest --no-cache",
-    "lint": "ng lint firebase-compat-app"        
+    "lint": "ng lint firebase-compat-app",
+    "cypress:open": "ng run firebase-compat-app:cypress-open"             
   }
 }

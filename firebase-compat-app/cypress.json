@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "firebase-compat-app/cypress/integration",
+  "supportFile": "firebase-compat-app/cypress/support/index.ts",
+  "videosFolder": "firebase-compat-app/cypress/videos",
+  "screenshotsFolder": "firebase-compat-app/cypress/screenshots",
+  "pluginsFile": "firebase-compat-app/cypress/plugins/index.ts",
+  "fixturesFolder": "firebase-compat-app/cypress/fixtures",
+  "baseUrl": "http://localhost:4200"
+}

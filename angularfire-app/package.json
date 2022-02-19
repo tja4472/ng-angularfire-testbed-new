@@ -2,6 +2,7 @@
   "scripts": {
     "start": "ng serve angularfire-app",
     "test": "jest --no-cache",
-    "lint": "ng lint angularfire-app"        
+    "lint": "ng lint angularfire-app" ,
+    "cypress:open": "ng run angularfire-app:cypress-open"           
   }
 }

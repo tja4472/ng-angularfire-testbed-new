@@ -29,9 +29,7 @@
               "angularfire-compat-app/src/favicon.ico",
               "angularfire-compat-app/src/assets"
             ],
-            "styles": [
-              "angularfire-compat-app/src/styles.css"
-            ],
+            "styles": ["angularfire-compat-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -96,9 +94,7 @@
               "angularfire-compat-app/src/favicon.ico",
               "angularfire-compat-app/src/assets"
             ],
-            "styles": [
-              "angularfire-compat-app/src/styles.css"
-            ],
+            "styles": ["angularfire-compat-app/src/styles.css"],
             "scripts": []
           }
         },
@@ -109,6 +105,39 @@
               "angularfire-compat-app/**/*.ts",
               "angularfire-compat-app/**/*.html"
             ]
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angularfire-compat-app:serve",
+            "configFile": "angularfire-compat-app/cypress.json"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angularfire-compat-app:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false,
+            "configFile": "angularfire-compat-app/cypress.json"
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angularfire-compat-app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angularfire-compat-app:serve:production"
+            }
           }
         }
       }
@@ -136,9 +165,7 @@
               "angularfire-app/src/favicon.ico",
               "angularfire-app/src/assets"
             ],
-            "styles": [
-              "angularfire-app/src/styles.css"
-            ],
+            "styles": ["angularfire-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -203,9 +230,7 @@
               "angularfire-app/src/favicon.ico",
               "angularfire-app/src/assets"
             ],
-            "styles": [
-              "angularfire-app/src/styles.css"
-            ],
+            "styles": ["angularfire-app/src/styles.css"],
             "scripts": []
           }
         },
@@ -216,6 +241,39 @@
               "angularfire-app/**/*.ts",
               "angularfire-app/**/*.html"
             ]
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angularfire-app:serve",
+            "configFile": "angularfire-app/cypress.json"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angularfire-app:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false,
+            "configFile": "angularfire-app/cypress.json"
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "angularfire-app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angularfire-app:serve:production"
+            }
           }
         }
       }
@@ -243,9 +301,7 @@
               "firebase-compat-app/src/favicon.ico",
               "firebase-compat-app/src/assets"
             ],
-            "styles": [
-              "firebase-compat-app/src/styles.css"
-            ],
+            "styles": ["firebase-compat-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -310,9 +366,7 @@
               "firebase-compat-app/src/favicon.ico",
               "firebase-compat-app/src/assets"
             ],
-            "styles": [
-              "firebase-compat-app/src/styles.css"
-            ],
+            "styles": ["firebase-compat-app/src/styles.css"],
             "scripts": []
           }
         },
@@ -323,6 +377,39 @@
               "firebase-compat-app/**/*.ts",
               "firebase-compat-app/**/*.html"
             ]
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "firebase-compat-app:serve",
+            "configFile": "firebase-compat-app/cypress.json"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "firebase-compat-app:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false,
+            "configFile": "firebase-compat-app/cypress.json"
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "firebase-compat-app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "firebase-compat-app:serve:production"
+            }
           }
         }
       }
@@ -350,9 +437,7 @@
               "firebase-app/src/favicon.ico",
               "firebase-app/src/assets"
             ],
-            "styles": [
-              "firebase-app/src/styles.css"
-            ],
+            "styles": ["firebase-app/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -417,9 +502,7 @@
               "firebase-app/src/favicon.ico",
               "firebase-app/src/assets"
             ],
-            "styles": [
-              "firebase-app/src/styles.css"
-            ],
+            "styles": ["firebase-app/src/styles.css"],
             "scripts": []
           }
         },
@@ -430,6 +513,39 @@
               "firebase-app/**/*.ts",
               "firebase-app/**/*.html"
             ]
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "firebase-app:serve",
+            "configFile": "firebase-app/cypress.json"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "firebase-app:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false,
+            "configFile": "firebase-app/cypress.json"
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "firebase-app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "firebase-app:serve:production"
+            }
           }
         }
       }
