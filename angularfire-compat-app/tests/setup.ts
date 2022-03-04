@@ -16,6 +16,15 @@ import {
 
 import firebase from 'firebase/compat/app';
 
+// https://github.com/tja4472/ngrx-task/blob/Updated/src/app/services/task-list.data.service.ts
+// https://github.com/tja4472/ngrx-task/blob/Updated/src/app/services/user-info.data.service.spec.ts
+// https://github.com/tja4472/ngrx-task/blob/Updated/src/app/%2Btest-examples/example01.spec.ts
+/*
+valueChanges
+doc delete
+doc set
+
+*/
 const COMMON_CONFIG = {
   apiKey: 'dummy-apiKey',
   // authDomain: 'angularfire2-test.firebaseapp.com',
