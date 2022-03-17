@@ -56,9 +56,9 @@ const providerSettings: {
 };
 
 /**
- * 
+ *
  * @param firebaseAppName Leave blank for default
- * @returns 
+ * @returns
  */
 export async function setup(firebaseAppName?: string) {
   let firebaseApp: FirebaseApp;

@@ -33,7 +33,7 @@ describe('angularFirestore collection', () => {
   });
 
   it('should create collection if missing', async () => {
-//
+    //
   });
 
   it('valueChanges without idField', (done) => {

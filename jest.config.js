@@ -6,6 +6,6 @@ module.exports = {
     '<rootDir>/angularfire-compat-app',
     '<rootDir>/firebase-app',
     '<rootDir>/firebase-compat-app',
-    '<rootDir>/.examples'
+    '<rootDir>/.examples',
   ],
 };

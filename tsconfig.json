@@ -5,7 +5,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,    
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -21,8 +21,8 @@
     "module": "es2020",
     "lib": ["es2020", "dom"],
     "paths": {
-      "#libs/*":["libs/*/src/public-api.ts"]
-    },    
+      "#libs/*": ["libs/*/src/public-api.ts"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
