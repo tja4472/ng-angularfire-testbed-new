@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - run: npm ci    
+      # - run: npm ci    
       # - run: npm run start-demo
       #   working-directory: .emulator
       # - run: npm run build
@@ -26,3 +26,4 @@ jobs:
         # spec: cypress/e2e/0-my-tests/**    
         # build: npm run build
             start: npm run bb  
+            working-directory: angularfire-compat-app  
