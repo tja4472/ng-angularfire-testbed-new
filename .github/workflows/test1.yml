@@ -1,7 +1,7 @@
 name: aa-test1
 on: [push]
 jobs:
-  aaaa
+  aaaa:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -9,4 +9,4 @@ jobs:
         with:
           node-version: '16'
       - run: npm run start-demo
-      working-directory: .emulator
+        working-directory: .emulator
