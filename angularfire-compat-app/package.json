@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "ng build angularfire-compat-app",
     "start": "ng serve angularfire-compat-app",
     "start:emulator-demo": "npm run start -- --configuration=emulator-demo",
     "start:emulator-real": "npm run start -- --configuration=emulator-real",

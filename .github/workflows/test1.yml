@@ -11,3 +11,5 @@ jobs:
       - run: npm ci    
       - run: npm run start-demo
         working-directory: .emulator
+      - run: npm run build
+        working-directory: angularfire-compat-app       
