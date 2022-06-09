@@ -7,6 +7,8 @@
     "start:production": "npm run start -- --configuration=production",    
     "test": "jest --no-cache",
     "lint": "ng lint angularfire-compat-app",
+    "aa": "firebase emulators:start --only firestore,auth --project demo-1",
+    "bb": "firebase emulators:exec --ui --only firestore,auth --project demo-1 'npm run start:emulator-demo'",    
     "--- cypress ---": "",    
     "cypress:emulate-demo": "cross-env FIRESTORE_EMULATOR_HOST=\"localhost:8080\" FIREBASE_AUTH_EMULATOR_HOST=\"localhost:9099\" CYPRESS_USE_DEMO_PROJECT=\"true\" GCLOUD_PROJECT=\"demo-1\" npm run cypress:open",
     "cypress:emulate-real": "cross-env FIRESTORE_EMULATOR_HOST=\"localhost:8080\" FIREBASE_AUTH_EMULATOR_HOST=\"localhost:9099\" GCLOUD_PROJECT=\"emulators-codelab-a5a89\" npm run cypress:open",

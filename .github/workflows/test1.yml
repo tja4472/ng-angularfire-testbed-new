@@ -1,15 +1,28 @@
 name: aa-test1
 on: [push]
 jobs:
-  aaaa:
+  cypress:
+    name: Cypress test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Cache firebase emulators
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/firebase/emulators
+          key: ${{ runner.os }}-firebase-emulators-${{ hashFiles('~/.cache/firebase/emulators/**') }}      
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
       - run: npm ci    
-      - run: npm run start-demo
-        working-directory: .emulator
-      - run: npm run build
-        working-directory: angularfire-compat-app       
+      # - run: npm run start-demo
+      #   working-directory: .emulator
+      # - run: npm run build
+      #  working-directory: angularfire-compat-app       
+
+    - name: Cypress run
+      uses: cypress-io/github-action@v4
+      with:
+        # spec: cypress/e2e/0-my-tests/**    
+        # build: npm run build
+        start: npm run bb  
