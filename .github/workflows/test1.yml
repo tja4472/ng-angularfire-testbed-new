@@ -20,9 +20,9 @@ jobs:
       # - run: npm run build
       #  working-directory: angularfire-compat-app       
 
-    - name: Cypress run
-      uses: cypress-io/github-action@v4
-      with:
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
         # spec: cypress/e2e/0-my-tests/**    
         # build: npm run build
-        start: npm run bb  
+            start: npm run bb  
